@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <!-- Houses the start button -->
+    <section id="buttonContainer">
+        <button id = "startButton">Start</button>
+    </section>
+    <section id="container">
+        <div id="timer">  ⌛</div>
+        <!-- Displayed at the end to allow users to see score and sumbit them if they want to -->
+        <div id="finalBox">
+            <div id="finalScore"></div> <br>
+                <div id="initialsBox">
+                    <form method="POST">
+                      <div class="input-group">
+                        <label for="initials">Initials</label>
+                        <input type="text" name="initials" id="initials" placeholder="Your Initials" />
+                      </div><br>
+                       <button id="submit">Submit</button> <button id="playAgain"> Play Again</button> <br>
+                       <ul id="scoreDisplay"></ul>
+                </div>
+            <!-- Questions and Answers box -->
+            <div id="quizContainer">
+                <div id="questionBox">Welcome to the JavaScript Knowledge Quiz! </div>
+                <p id="answerBox1" class="answer">Score Points for correct answers and having time remaining!</p>
+                <p id="answerBox2" class = "answer"> BUT BEWARE! Wrong answers will cost you a time penalty!</p>
+                <p id="answerBox3" class = "answer"> Press the Start Button above to begin!</p>
+                <div id="commentBox"></div>
+            </div>
+        </div>
+        <div id="highScores">
+            <h3 > <span id="currentScore"></span></h3>
+        </div>
+        <!-- Recent Scores Box -->
+    </section>
+    <section id="bottomContainer">
+        <ul id="scoreList">RECENT SCORES:
+            <br><li id="li0"></li>
+            <li id="li1"></li>
+            <li id ="li2"></li>
+            <li id ="li3"></li>
+            <li id ="li4"></li>
+        <ul>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
